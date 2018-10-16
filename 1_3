@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int f(int x, int y, int z)
+{
+return (x>=7) && (y>=7) && (z>=7);
+
+
+
+}
+int main() {
+	cout<<f(9,7,7);
+	return 0;
+}
