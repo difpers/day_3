@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+using Bp=bool(*)(int,int);0
+
+bool kurl(int a, int b)
+{
+	return (a>0)^(b>0);
+}
+bool f (int*arr, int first, int last, Bp p)
+	{
+	for(; first<last; ++first)
+	{
+		if(p(arr[first],arr[first+1]))
+		{
+			return true;
+	}}
+	return false;
+}
+int main() {
+	int array [6]{1,-9,8,-6,5,-2};
+	std::cout<< f(array,1,6,kurl) << std::endl;
+	return 0;
+}
