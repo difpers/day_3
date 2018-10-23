@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+using UP=bool(*)(int);
+bool count_if (int a)
+{
+	return a>0;
+}
+
+int ret (int*arr, int first, int last,  UP p)
+	{
+	int temp=0;
+	for(; first<last; ++first)
+{
+	if(p(arr[first]))
+	{
+		++temp;
+			}
+	}
+		return temp;
+}
+
+int main() {
+	int array [6]{1,9,8,6,5,3};
+	std::cout<< ret(array,0,6,count_if) << std::endl;
+
+	
+	return 0;
+}
