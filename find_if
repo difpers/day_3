@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int find_if (int*arr, int first, int last, int value)
+	{
+	for(; first<last; ++first)
+{
+	if(arr[first]==value)
+	{
+		return first;
+}}
+return -1;
+}
+int main() {
+	int array [6]{1,9,8,6,5,2};
+	std::cout<< find_if(array,0,6,2) << std::endl;
+
+	
+	return 0;
+}
