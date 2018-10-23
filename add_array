@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+using BO=int(*)(int,int);
+int m (int a, int b)
+{
+	return a+b;
+}
+
+int none_mul (int*arr, int size, int temp, BO p)
+{
+	for(int i=0; i<size; ++i)
+{
+	temp=p(temp,arr[i]);
+}
+	return temp;
+	}
+
+int main() {
+	int array [6]{1,9,8,6,5,3};
+	std::cout<< none_mul(array,6,0,m) << std::endl;
+	
+	
+	return 0;
+}
