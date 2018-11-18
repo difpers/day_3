@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int massiv(int*arr, int size)
+
+{
+    int temp=2;
+    int k=3;
+	for( int i=1; i<size; ++i)
+	{
+		temp=temp*(arr[i]-1)*k-1;
+		{
+		cout<<temp<<" ";
+        }}
+
+}
+int main()
+{
+	int array[5]{1,2,3,4,5};
+	cout<<massiv(array,5);
+	return 0;
+}
