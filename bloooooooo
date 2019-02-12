@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int f( int*arr, int first, int last)
+{
+	int temp=0;
+	int min = arr[0];
+	int max = arr[9];
+    for (; first<last; ++first)
+    {
+      if( arr[first]<arr[min]);
+       min=arr[first];
+    }return min;
+{
+ if( arr[first]<arr[max]);
+       max=arr[first];
+    }return max;
+    {
+     int temp=arr[min];
+     arr [min]=arr [max];
+     arr [max]=temp;
+}}
+int main ()
+{
+    int array[9]{2,4,8,16,3,13,98,51,24};
+    cout<<f(array,0,9);
+    return 0;
+}
