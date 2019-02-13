@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int f( int*arr, int first, int last)
+{
+	int elem=arr[0];
+	int index=0;
+for(; first<last;++first)
+
+{if(arr[first]<elem)
+    { elem=arr[first];
+    	index=first;
+    }
+   
+}}
+int main() {
+	 int array[10]{2,4,8,16,3,1,98,51,24,78};
+    cout<<f(array,0,10);
+	return 0;
+}
