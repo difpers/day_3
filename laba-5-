@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int f( int*arr, int first, int last)
+{
+for(; first<last;++first)
+
+if (arr[first]>arr[first-1])
+cout<<arr[first]<<endl;
+}
+int main() {
+	 int array[15]{2,4,8,16,3,13,98,51,24,1,44,43,45,46,47};
+    cout<<f(array,0,15);
+	return 0;
+}
